@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module csv_adj</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>csv_adj</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/aaaaa/info3dm-G5/csv_adj.py">/Users/aaaaa/info3dm-G5/csv_adj.py</a></font></td></tr></table>
+    <p><tt>取得した動画情報の修正プログラム。<br>
+取得した動画情報のtag欄の余分な括弧を削除する。<br>
+修正した動画情報のtagの頻出度が2以上の動画を用いて新しくscvファイルとして保存する。</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="ast.html">ast</a><br>
+<a href="datetime.html">datetime</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>d_today</strong> = datetime.date(2023, 8, 10)<br>
+<strong>data</strong> =     Unnamed: 0            0  ... viewCount  like...  ...    233795     4355.0
+
+[50 rows x 9 columns]<br>
+<strong>df</strong> =              frequency
+keyword               
+HY... 1
+バイオレット               1
+
+[846 rows x 1 columns]<br>
+<strong>df_filtered</strong> =           frequency
+keyword            
+ドラえもん   ...     2
+Japan             2
+
+[77 rows x 1 columns]<br>
+<strong>index</strong> = 49<br>
+<strong>row</strong> = Unnamed: 0                                      ...                   4355.0
+Name: 49, dtype: object<br>
+<strong>target_column</strong> = 'tags'<br>
+<strong>text</strong> = "['ポケモン', 'ポケットモンスター', 'ソード', 'シールド', 'ポケモン剣盾', '...', '実況動画', 'ゲーム動画', 'ポケモンSV', 'スカーレット', 'バイオレット']"<br>
+<strong>word_counts</strong> = Counter({'ゲーム': 8, 'マインクラフト': 4, '実況': 4, 'ドラマ':...'実況動画': 1, 'ゲーム動画': 1, 'スカーレット': 1, 'バイオレット': 1})<br>
+<strong>words</strong> = ['HYBE', 'HYBE LABELS', '하이브', '하이브레이블즈', '정국', 'Jung Kook', 'Seven', 'SPY×FAMILY', 'ミックスナッツ', '髭男', '髭男dism', 'ひげだん', 'ヒゲダン', '髭ダン', 'アイラブ', 'ilove', 'ユニバース', 'universe', 'クライベイビー', 'crybaby', ...]<br>
+<strong>words_list</strong> = ['ポケモン', 'ポケットモンスター', 'ソード', 'シールド', 'ポケモン剣盾', 'ポケモンソードシールド', '実況動画', 'ゲーム動画', 'ポケモンSV', 'スカーレット', 'バイオレット']</td></tr></table>
+</body></html>
